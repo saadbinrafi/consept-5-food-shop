@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- daisy ui and tailwinds cdn  -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- font family  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        .font-poppins{
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+
+
+    <!-- icon cdn start  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+<body class="font-poppins">
+    <section>
+        <!-- navigatio ber start hear  -->
+        <div class="conteiner mx-auto lg:px-24 px-8 my-8">
+
+            <div class="navbar bg-red-400 rounded-full px-8">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>Aboute Us</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>All Fruits</a></li>
+                 
+                    </ul>
+                  </div>
+                 
+                  <div class="navbar-center hidden lg:flex text-white font-bold">
+                    <ul class="menu menu-horizontal px-1">
+                      <li><a>Home</a></li>
+                      <li><a>Aboute Us</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>All Fruits</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <img class="hover:backdrop:marker:" src="images/logo.png" alt="">
+                <a class="btn btn-ghost text-xl text-white">Fruit Burst</a>
+                <div class="navbar-end">
+                 
+                    <div class="bg-white  flex items-center hidden lg:flex justify-between px-5 py-2 rounded-full">
+                        <input class="outline-none " type="text" placeholder="Search">
+                        <img src="images/Frame.png" alt="">
+                    </div>
+                  
+                </div>
+            </div>
+
+        </div>
+        <!-- navigation ber end hear  -->
+    </section>
+
+    <div class="conteiner mx-auto lg:px-24 px-8 my-8">
+        <div class="carousel w-full"> 
+            <div id="slide1" class="carousel-item relative w-full 
+                bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(images/banner1.png)] bg-center bg-cover h-[70vh]
+                flex items-center justify-center ">
+                
+                <div class="absolute top-10 right-10 bg-red-500 px-4 py-2 rounded-lg ">
+                    <h6 class="font-bold text-1xl">Hot Del</h6>
+                </div>
+                <!-- slide 1  -->
+                <div class="flex flex-col justify-center">
+                    <h1 class="text-3xl lg:text-7xl text-white font-bold text-center">
+                        Exotic tastes at your <br> doorstep 
+                    </h1>
+                    <p class="text-white text-center font-bold my-5">
+                        We supply highly quality organic products 
+                    </p>
+                    <button class="btn bg-red-500 border-none text-white mx-auto ">Button</button>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <!-- slide 2 start  -->
+            <div id="slide1" class="carousel-item relative w-full 
+                bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(images/banner2.png)] bg-center bg-cover  h-[70vh]
+                flex items-center justify-center">
+                <div class="flex flex-col justify-center">
+                    <h1 class="text-3xl lg:text-7xl text-white font-bold text-center">
+                        Exotic tastes at your <br> doorstep 
+                    </h1>
+                    <p class="text-white text-center font-bold my-5">
+                        We supply highly quality organic products 
+                    </p>
+                    <button class="btn bg-red-500 border-none text-white mx-auto ">Button</button>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <!-- slide 3  -->
+            <div id="slide1" class="carousel-item relative w-full 
+                bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(images/banner3.png)] bg-center bg-cover  h-[70vh]
+                flex items-center justify-center">
+                <div class="flex flex-col justify-center">
+                    <h1 class="text-3xl lg:text-7xl text-white font-bold text-center">
+                        Exotic tastes at your <br> doorstep 
+                    </h1>
+                    <p class="text-white text-center font-bold my-5">
+                        We supply highly quality organic products 
+                    </p>
+                    <button class="btn bg-red-500 border-none text-white mx-auto ">Button</button>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+
+
+            <!-- slide 4  -->
+            <div id="slide1" class="carousel-item relative w-full 
+            bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(images/banner4.png)] bg-center bg-cover  h-[70vh]
+            flex items-center justify-center">
+            <div class="flex flex-col justify-center">
+                <h1 class="text-3xl lg:text-7xl text-white font-bold text-center">
+                    Exotic tastes at your <br> doorstep 
+                </h1>
+                <p class="text-white text-center font-bold my-5">
+                    We supply highly quality organic products 
+                </p>
+                <button class="btn bg-red-500 border-none text-white mx-auto ">Button</button>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/3 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        </div>
+        <div class="h-[20vh] w-2/3 mx-auto bg-white -translate-y-20 shadow-lg rounded-lg flex items-center justify-center hidden lg:flex">
+            <div class="flex items-center justify-around space-x-3">
+                <img class="h-24" src="images/fruit1.png" alt="">
+                <img class="h-24" src="images/fruit2.png" alt="">
+                <img class="h-24" src="images/fruit3.png" alt="">
+                <img class="h-24" src="images/fruit4.png" alt="">
+                <img class="h-24" src="images/fruit5.png" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <main>
+        <section class="mt-24 py-24 conteiner px-8 lg:px-24 mx-auto">
+          
+            <div class="lg:flex justify-between items-center">
+                <div>
+                    <h1 class="text-4xl font-bold mb-2">
+                        Deal of the day
+                    </h1>
+                    <p class="w-2/3 font-semibold opacity-70">
+                        Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
+                    </p>
+                </div>
+                <div>
+                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:15;"></span>
+                          </span>
+                          days
+                        </div> 
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:10;"></span>
+                          </span>
+                          hours
+                        </div> 
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:24;"></span>
+                          </span>
+                          min
+                        </div> 
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:46;"></span>
+                          </span>
+                          sec
+                        </div>
+                      </div>
+                </div>
+                
+            </div>
+            <!-- secend fruit section  -->
+            <div class="mt-12 grid grid-cols-1 mb:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="border-2 flex flex-col  items-center justify-center px-4 py-6 space-y-3 rounded-md">
+                    <img src="images/fruit6.png" alt="">
+                    <h6>
+                        $12.99-$18.99
+                    </h6>
+                    <div class="divider"></div>
+                    <p>Apple</p>
+                    <div>
+                        <div class="rating rating-md">
+                            <input type="radio" name="rating-9" class="rating-hidden" />
+                            <input type="radio" name="rating-9" class="mask mask-star-2" />
+                            <input type="radio" name="rating-9" class="mask mask-star-2" checked />
+                            <input type="radio" name="rating-9" class="mask mask-star-2" />
+                            <input type="radio" name="rating-9" class="mask mask-star-2" />
+                            <input type="radio" name="rating-9" class="mask mask-star-2" />
+                        </div>
+                    </div>
+                    <button 
+                        class="btn btn-ghost text-red-500 font-semibold">
+                        Details
+                    </button>
+                </div>
+
+                <div class="border-2 flex flex-col  items-center justify-center px-4 py-6 space-y-3 rounded-md">
+                    <img src="images/fruit7.png" alt="">
+                    <h6>
+                        $12.99-$18.99
+                    </h6>
+                    <div class="divider"></div>
+                    <p>lemon</p>
+                    <div>
+                        <div class="rating rating-md">
+                            <input type="radio" name="rating-9" class="rating-hidden" />
+                            <input type="radio" name="rating-9" class="mask mask-star-2" />
+                            <input type="radio" name="rating-9" class="mask mask-star-2" checked />
+                            <input type="radio" name="rating-9" class="mask mask-star-2" />
+                            <input type="radio" name="rating-9" class="mask mask-star-2" />
+                            <input type="radio" name="rating-9" class="mask mask-star-2" />
+                        </div>
+                    </div>
+                    <button 
+                        class="btn btn-ghost text-red-500 font-semibold">
+                        Details
+                    </button>
+                </div>
+
+                <div class="border-2 flex flex-col  items-center justify-center px-4 py-6 space-y-3 rounded-md">
+                    <img src="images/fruit8.png" alt="">
+                    <h6>
+                        $12.99-$18.99
+                    </h6>
+                    <div class="divider"></div>
+                    <p>draon</p>
+                    <div>
+                        <div class="rating rating-md">
+                            <input type="radio" name="rating-9" class="rating-hidden" />
+                            <input type="radio" name="rating-9" class="mask mask-star-2" />
+                            <input type="radio" name="rating-9" class="mask mask-star-2" checked />
+                            <input type="radio" name="rating-9" class="mask mask-star-2" />
+                            <input type="radio" name="rating-9" class="mask mask-star-2" />
+                            <input type="radio" name="rating-9" class="mask mask-star-2" />
+                        </div>
+                    </div>
+                    <button 
+                        class="btn btn-ghost text-red-500 font-semibold">
+                        Details
+                    </button>
+                </div>
+
+                <div class="border-2 flex flex-col  items-center justify-center px-4 py-6 space-y-3 rounded-md">
+                    <img src="images/fruit9.png" alt="">
+                    <h6>
+                        $12.99-$18.99
+                    </h6>
+                    <div class="divider"></div>
+                    <p>Benana</p>
+                    <div>
+                        <div class="rating rating-md">
+                            <input type="radio" name="rating-9" class="rating-hidden" />
+                            <input type="radio" name="rating-9" class="mask mask-star-2" />
+                            <input type="radio" name="rating-9" class="mask mask-star-2" checked />
+                            <input type="radio" name="rating-9" class="mask mask-star-2" />
+                            <input type="radio" name="rating-9" class="mask mask-star-2" />
+                            <input type="radio" name="rating-9" class="mask mask-star-2" />
+                        </div>
+                    </div>
+                    <button 
+                        class="btn btn-ghost text-red-500 font-semibold">
+                        Details
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="flex justify-center mt-9">
+                <button class="btn btn-primary bg-red-500 text-white">Shop All</button>
+            </div>
+           
+        </section>
+
+        <section>
+            <div class=" py-0 conteiner px-8 lg:px-24 mx-auto">
+                <div>
+                    
+                    <div 
+                        class="bg-[linear-gradient(45deg,rgba(0,0,0,03),rgba(0,0,0,0.4)),url(images/banner1.png)] bg-center bg-cover lg:h-[70vh]
+                        flex items-center justify-center rounded-">
+
+                    
+                        <div class="flex flex-col items-center">
+                            <h3 class="text-white font-extrabold text-4xl">
+                                Meet The Team
+                            </h3>
+                    
+                            <p class="text-white font-semibold w-2/3 text-center py-7">
+                                Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.
+                            </p>
+
+                            <div class="">
+                                <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-10">
+                                        <!-- member 1 is hear  -->
+                                    <div class=" flex flex-col  items-center justify-center  rounded-md">
+                                        <img class="h-16" src="images/member1.png" alt="">
+                                        <h6 class="text-white pt-5">
+                                            Awlad Hossain
+                                        </h6>
+                                        <p class="text-white">Fruits Expert</p>
+                                        <div class="flex gap-2 py-4">
+                                            <i class="fa-brands fa-square-facebook text-white
+                                            bg-purple-500  rounded-full"></i>
+
+
+                                            <i class="fa-brands fa-x-twitter  text-white bg-purple-500 rounded-full ">
+
+                                            </i>
+
+                                            <i class="fa-brands fa-linkedin-in
+                                            text-white bg-purple-500 rounded-full"></i>
+
+                                        </div>
+                                       
+                                    </div>
+                                        <!-- member 2 is hear  -->
+                                    <div class=" flex flex-col  items-center justify-center  rounded-md">
+                                        <img class="h-16" src="images/member2.png" alt="">
+                                        <h6 class="text-white pt-5">
+                                            Awlad Hossain
+                                        </h6>
+                                        <p class="text-white">Fruits Expert</p>
+                                        <div class="flex gap-2 py-4">
+                                            <i class="fa-brands fa-square-facebook text-white
+                                            bg-purple-500 rounded-full"></i>
+
+
+                                            <i class="fa-brands fa-x-twitter  text-white bg-purple-500 rounded-full ">
+
+                                            </i>
+
+                                            <i class="fa-brands fa-linkedin-in
+                                            text-white bg-purple-500 rounded-full"></i>
+
+                                        </div>
+                                       
+                                    </div>
+
+
+                                    <!-- member 3 is hear  -->
+
+                                    <div class=" flex flex-col  items-center justify-center  rounded-md">
+                                        <img class="h-16" src="images/member3.png" alt="">
+                                        <h6 class="text-white pt-5">
+                                            Awlad Hossain
+                                        </h6>
+                                        <p class="text-white">Fruits Expert</p>
+                                        <div class="flex gap-2 py-4">
+                                            <i class="fa-brands fa-square-facebook text-white
+                                            bg-purple-500 rounded-full"></i>
+
+
+                                            <i class="fa-brands fa-x-twitter  text-white bg-purple-500 rounded-full ">
+
+                                            </i>
+
+                                            <i class="fa-brands fa-linkedin-in
+                                            text-white bg-purple-500 rounded-full"></i>
+
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- member 4 is hear  -->
+
+                                    <div class=" flex flex-col  items-center justify-center  rounded-md">
+                                        <img class="h-16" src="images/member4.png" alt="">
+                                        <h6 class="text-white pt-5">
+                                            Awlad Hossain
+                                        </h6>
+                                        <p class="text-white">Fruits Expert</p>
+                                        <div class="flex gap-2 py-4">
+                                            <i class="fa-brands fa-square-facebook text-white
+                                            bg-purple-500 rounded-full"></i>
+
+
+                                            <i class="fa-brands fa-x-twitter  text-white bg-purple-500 rounded-full ">
+
+                                            </i>
+
+                                            <i class="fa-brands fa-linkedin-in
+                                            text-white bg-purple-500 rounded-full"></i>
+
+                                        </div>
+                                       
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            
+                            
+                            
+                        
+                        </div>
+                    
+                        
+                    
+                    
+                    
+                    
+                    </div>
+
+                   
+                
+                </div>
+
+            </div>
+        </section>
+
+        <!-- last section  -->
+
+        <section>
+            <div class="py-0 conteiner px-8 lg:px-24 mx-auto my-10 lg:my-24">
+
+                <div class="flex flex-col items-center">
+                    <h4 class=" text-3xl lg:text-4xl py-8 font-bold">
+                        Why Choose Us
+                    </h4>
+                    <p class="font-semibold w-2/3 text-center">
+                        Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 justify-center gap-10 mt-12">
+                    <div>
+                        <div class="flex space-x-3">
+                            <div class="h-12 w-12 rounded-full bg-slate-200
+                            flex items-center justify-center">
+                            <img src="images/love 1.png" alt="">
+
+                            </div>
+                            <div>
+                                <h3>Dedicated Team</h3>
+                                <div class="divider"></div>
+                                <p>
+                                    Professional employees are there for you to pick the most amazing and fresh fruits. 
+                                </p>
+
+                            </div>
+                            
+                            
+                        </div>
+
+                        <div class="flex space-x-3 mt-10">
+                            <div class="h-12 w-12 rounded-full bg-slate-200
+                            flex items-center justify-center">
+                            <img src="images/love 1.png" alt="">
+
+                            </div>
+                            <div>
+                                <h3 class="">Dedicated Team</h3>
+                                <div class="divider"></div>
+                                <p>
+                                    Professional employees are there for you to pick the most amazing and fresh fruits. 
+                                </p>
+
+                            </div>
+                            
+                            
+                        </div><div class="flex space-x-3 mt-10">
+                            <div class="h-12 w-12 rounded-full bg-slate-200
+                            flex items-center justify-center">
+                            <img src="images/love 1.png" alt="">
+
+                            </div>
+                            <div>
+                                <h3>Dedicated Team</h3>
+                                <div class="divider"></div>
+                                <p>
+                                    Professional employees are there for you to pick the most amazing and fresh fruits. 
+                                </p>
+
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+
+
+                    
+                    <div>
+                        <img class="h-full " src="images/whychoose1.png" alt="">
+                    </div>
+
+                    <div>
+                        <div>
+                            <div class="flex space-x-3 mt-10">
+                                
+                                <div class="text-right">
+                                    <h3>Dedicated Team</h3>
+                                    <div class="divider"></div>
+                                    <p>
+                                        Professional employees are there for you to pick the most amazing and fresh fruits. 
+                                    </p>
+    
+                                </div>
+                                <div class="h-12 w-12 rounded-full bg-slate-200
+                                flex items-center justify-center">
+                                <img src="images/love 1.png" alt="">
+                                </div>
+                                
+                            </div>
+    
+                            <div class="flex space-x-3 mt-10">
+                                
+                                <div class="text-right">
+                                    <h3 class="">Dedicated Team</h3>
+                                    <div class="divider"></div>
+                                    <p>
+                                        Professional employees are there for you to pick the most amazing and fresh fruits. 
+                                    </p>
+    
+                                </div>
+
+                                <div class="h-12 w-12 rounded-full bg-slate-200
+                                flex items-center justify-center">
+                                <img src="images/love 1.png" alt="">
+                                </div>
+                                
+                                
+                            </div>
+                            
+                            <div class="flex space-x-3 mt10">
+                                
+                                <div class="text-right">
+                                    <h3>Dedicated Team</h3>
+                                    <div class="divider"></div>
+                                    <p>
+                                        Professional employees are there for you to pick the most amazing and fresh fruits. 
+                                    </p>
+    
+                                </div>
+
+                                <div class="h-12 w-12 rounded-full bg-slate-200
+                                flex items-center justify-center">
+                                <img src="images/love 1.png" alt="">
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+            
+            </div>
+        </section>
+
+        <!-- footer section  -->
+
+        <footer>
+            <section class="">
+
+                <div 
+                    class="conteiner py-0 conteiner px-8 lg:px-24 mx-auto my-8 lg:my-24 bg-black h-[520px]">
+
+                    <div class="flex justify-center items-center my-12 pt-12">
+                        <img src="images/logo.png" alt="">
+                        <a class="btn btn-ghost text-xl text-white">Fruit Burst</a>
+                            
+                        
+                    </div>
+
+                    <div class="my-12">
+                        <div class="text-white flex flex-col lg:flex-row items-center justify-center gap-8 ">
+                            <a href="">Home</a>
+                            <a href="">About Us</a>
+                            <a href="">Shop</a>
+                            <a href="">All Fruits</a>
+                            <a href="">Support</a>
+                            <a href="">My Account</a>
+                        </div>
+                    
+                        <div class="flex items-center justify-center mt-8 gap-6 lg:mt-12 lg:gap-12">
+                            <i class="fa-brands fa-twitter text-white"></i>
+                            <i class="fa-brands fa-facebook text-white"></i>
+                            <i class="fa-brands fa-youtube text-white"></i>
+                            <i class="fa-brands fa-square-instagram text-white"></i>
+                            <i class="fa-brands fa-apple text-white"></i>
+                        </div>
+                    
+                    
+                    
+                    </div>
+
+                </div>
+
+            </section>
+
+            
+        </footer>
+
+        
+
+       
+    
+    </main>
+
+
+</body>
+</html>
